@@ -11,7 +11,7 @@ RUN mkdir /certs
 
 COPY ./certs/ /certs 
 
-RUN chown -R appuser:appgroup /app /etc/nginx /var/cache/nginx /run/nginx.pid /certs
+RUN chown -R appuser:appgroup /app /etc/nginx /var/cache/nginx /run/nginx.pid /certs /var/log/nginx
 
 COPY nginx.conf /etc/nginx
 
